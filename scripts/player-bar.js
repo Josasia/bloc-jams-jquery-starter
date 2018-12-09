@@ -37,9 +37,7 @@
     $('#time-control input').val(percent);
   }, 1000);
 
-///set volume. not working
 $('#volume-control input').on('input', function (event) {
-
   player.setVolume(event.target.value);
 });
 

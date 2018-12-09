@@ -38,7 +38,8 @@
   }, 1000);
 
 ///set volume. not working
-$('volume-control input').on('input', function (event) {
+$('#volume-control input').on('input', function (event) {
+
   player.setVolume(event.target.value);
 });
 

@@ -3,11 +3,8 @@
 class Helper {
   playPauseAndUpdate(song) {
     player.playPause(song);
-    const player = {
-      currentlyPlaying: {
-        duration: 0
-      }
-    };
+    const totalTime = player.currentlyPlaying.duration;
+    $('#time-control .total-time').text(totalTime);
   }
 };
   const helper = new Helper();
